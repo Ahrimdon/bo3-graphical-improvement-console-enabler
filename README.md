@@ -1,5 +1,5 @@
 # BO3-Graphical-Improvement
-This mod sets r_lodbiasrigid to -1000 (increases draw distance), r_dof_enable to 0 (disables depth of field) and enables the console. There is also a welcome message in which you can change by modifying the source code.
+This mod sets r_lodbiasrigid to -1000 (increases draw distance), r_dof_enable to 0 (disables depth of field) and enables the console. There is also a welcome message in which you can change by modifying the source code (requires Black Ops 3 Mod Tools).
 
 INSTALL
 
