@@ -3,8 +3,8 @@
 #using scripts\shared\callbacks_shared;
 #using scripts\shared\system_shared;
 
-#using scripts\shared\flag_shared;	//Spawn Message Flags
-#using scripts\shared\array_shared;	//Spawn Message Array
+#using scripts\shared\flag_shared;	//Spawn message flags
+#using scripts\shared\array_shared;	//Spawn message array
 
 #insert scripts\shared\shared.gsh;
 
@@ -16,7 +16,7 @@ function __init__()
 {
 	callback::on_start_gametype( &init );
 	callback::on_connect( &on_player_connect );
-	callback::on_spawned( &on_player_spawned ); //Spawn Message Function
+//	callback::on_spawned( &on_player_spawned ); //Call spawn message function (Remove // from beginning of line)
 }	
 
 function init()
@@ -27,6 +27,7 @@ function init()
 	//Client Dvars
 	SetDvar("r_dof_enable", "0");
 	SetDvar("r_lodbiasrigid", "-1000");
+	SetDvar("r_modellodbias", "10");
 }
 
 function on_player_connect()
@@ -39,10 +40,11 @@ function on_player_connect()
 	}
 
 }
-
+/* //Delete this line
 function on_player_spawned()
 {
-	//Spawn Message
-	level flag::wait_till("initial_blackscreen_passed");
-	self iPrintLnBold("Follow ^2@thahrimdon ^7on ^1YouTube ^7& ^6Twitch^7!");
+	level flag::wait_till("initial_blackscreen_passed"); //Wait until blackscreen has passed
+	//Spawn message
+	self iPrintLnBold("Follow ^2@thahrimdon ^7on ^1YouTube ^7& ^6Twitch^7!"); //Customize spawn message In ""
 }
+*/ //Delete this line
