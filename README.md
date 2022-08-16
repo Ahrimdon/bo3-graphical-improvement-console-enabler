@@ -12,7 +12,7 @@ INSTALL
 
 1. Create a folder called "mods" in your Call of Duty Black Ops III Directory
 
-2. In the "mods" folder, create a folder (this can be named whatever, default is "zm_ahrimdon")
+2. In the "mods" folder, create a folder (this can be named whatever, default is "zm_graphical_improvement")
 
 3. In that folder, create a folder called "zone"
 
